@@ -33,13 +33,13 @@ EMTenant SBJ5Ma4h > 1P Pixel 2113667628422851935 (Luis Test Business 3) > LG SG 
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
 
-        <li><button id="unverifiedEvent_button" type="button">unverifiedEvent</button></li>
 
-        
+      
     </ul>
     </div>
-
 <script type="text/javascript">
+
+  
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
   cbq('track', 'AddToWishlist');
 }, false);
@@ -67,9 +67,5 @@ document.getElementById('registrationButton').addEventListener('click', function
   cbq('track', 'CompleteRegistration');
 }, false);
 
-    
-    document.getElementById('unverifiedEvent_button').addEventListener('click', function() {cbq('track', 'unverifiedEvent', {value: 100,currency: 'USD',ssn:'11223333'  }) }, false);
-    
-    
 </script>
 </body>
