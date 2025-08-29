@@ -1,5 +1,5 @@
 <p>
-  FBQ Site (Original & Modified Body code)
+  Test Meta Site (FBQ) <!-- Original & Modified Body code -->
     <br />
     <br />
     <br />
@@ -44,7 +44,7 @@
   <li><button id="registrationButton" type="button">Registration (x10)</button></li>
 </ul></div>
 <div><ul>
-  <li><button id="siteButton" type="button">Site 1 (x10)</button></li>
+  <li><button id="siteButton" type="button">Site 5 (x10)</button></li>          <!-- Site # -->
   <li><button id="invalidpurchaseButton" type="button">Invalid Purchase (x10)</button></li>
   <li><button id="searchButton" type="button">Search (x10)</button></li>
   <li><button id="contactButton" type="button">Contact (x10)</button></li>
@@ -55,13 +55,13 @@
 </ul></div>
 <script type="text/javascript">
   for(var i = 0; i < 10; i++) {
+document.getElementById('siteButton').addEventListener('click', function() {fbq('track', 'Site5')}, false); 
 document.getElementById('addToWishlistButton').addEventListener('click', function() {fbq('track', 'AddToWishlist'); }, false);
 document.getElementById('addToCartButton').addEventListener('click', function() {fbq('track', 'AddToCart');}, false);
 document.getElementById('checkoutButton').addEventListener('click', function() {fbq('track', 'InitiateCheckout');}, false);
 document.getElementById('purchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
 document.getElementById('subcribeButton').addEventListener('click', function() {fbq('track', 'Subscribe');}, false);
 document.getElementById('registrationButton').addEventListener('click', function() {fbq('track', 'CompleteRegistration');}, false);
-document.getElementById('siteButton').addEventListener('click', function() {fbq('track', 'Site1')}, false);
 document.getElementById('invalidpurchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
 document.getElementById('searchButton').addEventListener('click', function() {fbq('track', 'Search'); }, false);    
 document.getElementById('contactButton').addEventListener('click', function() {fbq('track', 'Contact'); }, false);    
