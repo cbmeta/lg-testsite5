@@ -73,6 +73,18 @@
   <li><button id="purchaseNoValueButton" type="button">Purchase With No Value (x10)</button></li>
 </ul></div>
 <script type="text/javascript">
+
+
+
+
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+async function startLoop() {
+  for (let i = 0; i < 5; i++) {
+    
+    
+
+
+  
   for(var i = 0; i < 5; i++) {
 document.getElementById('siteButton').addEventListener('click', function() {fbq('track', 'Site5')}, false); 
 document.getElementById('addToWishlistButton').addEventListener('click', function() {fbq('track', 'AddToWishlist'); }, false);
@@ -89,6 +101,16 @@ document.getElementById('rateButton').addEventListener('click', function() {fbq(
 document.getElementById('adClickButton').addEventListener('click', function() {fbq('track', 'AdClick'); }, false);
 document.getElementById('purchaseNoValueButton').addEventListener('click', function() {fbq('track', 'Purchase', {currency: 'USD',});}, false);
 }
+
+    ;
+    await wait(2000); 
+  }
+  ;
+}
+
+startLoop();
+
+  
 </script>
 </body>
 
